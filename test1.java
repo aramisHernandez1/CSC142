@@ -1,14 +1,11 @@
-public class test1{
+import javax.swing.*;;
 
-    public static void main(String[] args) {
-        int m = 10;
-        double n = 5.0d; // 4 byte 
-        float f = 11.5f; // 8 byte 
-        String name = "west";
-        char symbol = '#';
-
-        System.out.println(m+"****"+name+"****");
-        System.out.println("Test 1 CSC142");
+public class test1 {
+    public static void main(String[] args){
+        JOptionPane.showMessageDialog(null, "CSC142");
+        String name = JOptionPane.showInputDialog("Please enter your name...");
+        JOptionPane.showMessageDialog(null, name);
+        
+        System.exit(0); //If you use JoptitionPane always end with system exit 0.
     }
-
 }
