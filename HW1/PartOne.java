@@ -2,6 +2,7 @@ package HW1;
 
 import java.util.*;
 
+//Did not account for invaild inputs, such as strings doubles etc.
 public class PartOne {
     public static void main(String[] args) {
         //Initalize input and arrays..
@@ -22,6 +23,8 @@ public class PartOne {
         //Print out arrays.
         System.out.println(Arrays.toString(data));
         System.out.println(Arrays.toString(newData));
+
+        keyboard.close();
     }
 
     private static int[] insertValue(int[] orignal, int index, int newValue){
