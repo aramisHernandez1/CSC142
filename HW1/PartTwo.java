@@ -1,6 +1,8 @@
 package HW1;
 import java.util.*;
 
+//Homework objective to copy a 1*9 array into a two dimensional 3*3 array.
+
 public class PartTwo {
     public static void main(String[] args) {
         int[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9}; //1*9 array.

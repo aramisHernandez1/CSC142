@@ -2,7 +2,12 @@ package HW1;
 
 import java.util.*;
 
-//Did not account for invaild inputs, such as strings doubles etc.
+/*Homework Objective:To get the users value and index. Afterwards,
+insert that value into that index without replacing the current index.
+(So move the rest +1 index to the right.)
+
+
+Did not account for invaild inputs, such as strings doubles etc.*/
 public class PartOne {
     public static void main(String[] args) {
         //Initalize input and arrays..
