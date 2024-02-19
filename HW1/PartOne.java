@@ -19,13 +19,14 @@ public class PartOne {
         int userValue = keyboard.nextInt();
         System.out.print("Please enter the index of this value:");
         int userIndex = keyboard.nextInt();
-        //Limit index to avoid errors.
-        userIndex = limit(userIndex, data.length, 0);
 
-        //Create new array.
+        //Limit index to avoid errors. 
+        userIndex = limit(userIndex, data.length, 0); //No negative indexs in java.
+
+        //Create new array and slot in value at index.
         int[] newData = insertValue(data, userIndex, userValue);
 
-        //Print out arrays.
+        //Print/Display out arrays.
         System.out.println(Arrays.toString(data));
         System.out.println(Arrays.toString(newData));
 
