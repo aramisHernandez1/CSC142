@@ -1,3 +1,4 @@
+package Day1;
 public class MoreArray{
 
     public static void main(String[] args) {

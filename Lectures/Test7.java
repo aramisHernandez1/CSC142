@@ -1,3 +1,4 @@
+package Lectures;
 public class Test7 {
     public static void main(String[] args) {
         int[] A = {1, 20, -5, 0};
