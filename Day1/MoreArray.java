@@ -3,7 +3,7 @@ public class MoreArray{
 
     public static void main(String[] args) {
         int[][] A = {{1, 2}, {3, 4}, {5,6}};
-        int[][] B = {{-1, -2}, {-3, -4}, {-5, -6}};
+        int[][] B = {{1, -2}, {-3, -4}, {-5, -6}};
         int[][] C = new int[3][2];
         int sum = 0;
 
