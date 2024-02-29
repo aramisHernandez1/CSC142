@@ -1,3 +1,4 @@
+package Assignments;
 //Aramis Hernandez
 //CSC 142 9:30am
 //Exam 1: Feb 22 9:30 

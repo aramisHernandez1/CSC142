@@ -1,3 +1,4 @@
+package Assignments;
 import java.util.*;
 
 /*Homework Objective:To get the users value and index. Afterwards,

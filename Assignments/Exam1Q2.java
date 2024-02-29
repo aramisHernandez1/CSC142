@@ -1,3 +1,4 @@
+package Assignments;
 public class Exam1Q2 {
 
     public static void main(String[] args) {

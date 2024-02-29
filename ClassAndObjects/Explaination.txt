@@ -1,0 +1,12 @@
+Class is the blueprint of an object.
+The big idea of how an object will behave.
+
+Object: Is an entity that combines states and behaves.
+It is a instinces of the class. 
+
+When you have something like
+
+Food pie = new Food();
+new means create an object in memory. And return object's memory address
+Two different objects are different because they have different memory addresses
+But they could belong to the same class or "blueprint".

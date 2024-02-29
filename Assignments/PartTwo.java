@@ -1,3 +1,4 @@
+package Assignments;
 import java.util.*;
 
 //Homework objective to copy a 1*9 array into a two dimensional 3*3 array.
