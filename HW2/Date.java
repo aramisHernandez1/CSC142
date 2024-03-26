@@ -76,7 +76,7 @@ public class Date {
         int days = 0;
 
         if(nextDate.day != this.day && nextDate.month != this.month){
-            days = daysInMonth() - this.day; //Get the difference of max days in current month and day and add it to the days needed to pass.
+            days = this.daysInMonth() - this.day; //Get the difference of max days in current month and day and add it to the days needed to pass.
         }
         
         int i = this.month;
