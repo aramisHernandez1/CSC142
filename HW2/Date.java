@@ -1,7 +1,7 @@
 package HW2;
 
 public class Date {
-    //Basic month day and year 
+    //Basic month day and year along with the maxium amount of days a month has
     private int month;
     private int day;
     private int maxDay;
@@ -13,11 +13,13 @@ public class Date {
         this.month = limitLoop(month, 12, 1);
 
         this.maxDay = daysInMonth(); //Get max days in currect month
-        this.day = limit(day, maxDay, 1); //Limit days to ensure again it is vaild
+
+        //Limit days to ensure again it is vaild
+        this.day = limit(day, maxDay, 1); 
         this.year = year;
     }
 
-    //Getters
+    //#region Getters
     public int getMonth(){
         //Gets the months interger value
         return this.month;
@@ -30,7 +32,9 @@ public class Date {
     public int getYear(){
         return this.year;
     }
+    //#endregion
 
+    //To string method. Coverts date to string format month/day
     public String toString(){
         String output = "";
         output = output.format("%d/%d", this.month, this.day);
@@ -70,7 +74,7 @@ public class Date {
         }
     }
 
-    //To do: Need to make the days add loop 
+    //Gets the amount days until the next passed.
     public int daysToNextDate(Date nextDate){
 
         int days = 0;
@@ -79,19 +83,18 @@ public class Date {
             days = this.daysInMonth() - this.day; //Get the difference of max days in current month and day and add it to the days needed to pass.
         }
         
-        int i = this.month;
+        int currentMonth = this.month;
 
-        while(i != nextDate.month){
-            i++;
-            i = limitLoop(i, 12, 1);
-            if(i == nextDate.month){
+        while(currentMonth != nextDate.month){
+            currentMonth++;
+            currentMonth = limitLoop(currentMonth, 12, 1);
+            if(currentMonth == nextDate.month){
                 days += nextDate.day;
                 break;
             }
-            days += daysInMonth(i);
+            days += daysInMonth(currentMonth);
         }
         return days;
-
     }
 
 
@@ -131,5 +134,4 @@ public class Date {
     }
 
 
-    
 }
