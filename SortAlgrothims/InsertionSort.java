@@ -9,13 +9,15 @@ public class InsertionSort {
 
         for(int i = 1; i < data.length; i++){
             if(data[i-1] > data[i]){
-                swap(num1, num2);
+                int temp = data[i-1];
+                data[i-1] = data[i];
+                data[i] = temp;
             }
         }
-        System.out.println(Arrays.deepToString(data));
+        System.out.println(Arrays.toString(data));
     }
 
-    private void swap(int num1, int num2){
+    private static void swap(int num1, int num2){
         int temp = num1;
         num1 = num2;
         num2 = temp;
