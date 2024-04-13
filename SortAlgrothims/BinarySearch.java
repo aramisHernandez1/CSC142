@@ -18,14 +18,10 @@ public class BinarySearch {
 
             if(A[mid] == target) return true;
             
-            if(A[mid] < value) left = mid +1;
+            if(A[mid] < target) left = mid +1;
             else right = mid-1;
             
             return false;
-        }
-
-        private static int recursion(int[] A, int target){
-            
         }
 
     }
